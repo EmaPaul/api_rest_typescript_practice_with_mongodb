@@ -1,10 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/app.js", "use": "@vercel/node" }
+    { "src": "src/app.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "dist/app.js" }
+    {
+      "src": "/(.*)",
+      "dest": "/dist/app.js"
+    }
   ],
   "env": {
     "MONGODB_URI": "@db_uri",
