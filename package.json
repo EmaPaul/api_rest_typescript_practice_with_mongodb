@@ -2,7 +2,7 @@
   "name": "api_rest_mongo_typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
