@@ -5,6 +5,11 @@
   ],
   "routes": [
     {
+      "src": "/upload",
+      "methods": ["POST"],
+      "dest": "dist/app.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "dist/app.js"
     }
