@@ -4,13 +4,11 @@ import { logMiddleware } from "../middleware/log"
 
 const router = Router()
 
-router.get("/", getItems)
-router.get("/:id",logMiddleware,getItem)
-router.post("/postcar",postItem)
-router.put("/:id/putcar",updateItem)
-router.delete("/:id",deleteItem)
+router.get("/item", getItems)
+router.get("/item/:id",logMiddleware,getItem)
+router.post("/item/postcar",postItem)
+router.put("/item/:id/putcar",updateItem)
+router.delete("/item/:id",deleteItem)
 
-export {
-    router
-}
+export default router
 
