@@ -4,8 +4,6 @@ import { checkList } from "../middleware/session"
 
 const router = Router()
 
-router.get("/", checkList , getItemsOrders)
+router.get("/order", checkList , getItemsOrders)
 
-export {
-    router
-}
+export default router
