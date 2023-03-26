@@ -5,8 +5,6 @@ import { checkList } from "../middleware/session"
 
 const router = Router()
 
-router.post("/",checkList,multerMiddleware.single('myFile'),getFile)
+router.post("/upload",checkList,multerMiddleware.single('myFile'),getFile)
 
-export{
-    router
-}
+export default router
