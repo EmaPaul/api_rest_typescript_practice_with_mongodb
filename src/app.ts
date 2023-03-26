@@ -5,6 +5,7 @@ import item from './routes/item'
 import upload from './routes/upload'
 import order from './routes/order'
 import auth from './routes/auth'
+import blogs from './routes/blogs'
 import dbConnect from './config/mongo';
 
 
@@ -17,6 +18,7 @@ app.use("/",item);
 app.use("/",upload);
 app.use("/",order);
 app.use("/",auth);
+app.use("/",blogs);
 
 
 
